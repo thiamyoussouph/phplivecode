@@ -15,14 +15,14 @@ class Note extends Model
 
     public function apprenant()
     {
-        return $this->belongsTo(Apprenant::class);
+        return $this->belongsTo(Apprenant::class, 'apprenant_id');
     }
     public function matier()
     {
-        return $this->belongsTo(Matier::class);
+        return $this->belongsTo(Matier::class, 'matiere_id');
     }
     public function typeDevoir(){
-        return $this->belongsTo(TypeDevoir::class);
+        return $this->belongsTo(TypeDevoir::class, 'typedevoior_id');
     }
      
      

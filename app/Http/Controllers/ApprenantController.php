@@ -14,7 +14,7 @@ class ApprenantController extends Controller
      */
     public function index()
     {
-        $apprenants=Note::all();
+        $apprenants=Note::with('apprenant','matier','typeDevoir')->get(); //get all notes
       
          
         return view('Apprenants.index',compact('apprenants'));

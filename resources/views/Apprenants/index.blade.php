@@ -27,13 +27,13 @@
             @foreach ($apprenants as $note)
          
           <tr>
-            <th scope="row">{{$note->id}}</th>
-            <td>{{$note->apprenant->nom}}</td>
-            <td>{{$note->apprenant->prenom}}</td>
-            <td>{{$note->apprenant->matricule}}</td>
-            <td>{{$note->apprenant->email}}</td>
-            <td></td>
-            <td></td>
+            <td>{{ $note->apprenant->nom }}</td>
+            <td>{{ $note->apprenant->prenom }}</td>
+            <td>{{ $note->apprenant->matricule }}</td>
+            <td>{{ $note->apprenant->email }}</td>
+            <td>{{ $note->matier->nom }}</td>
+            <td>{{ $note->typeDevoir->nom }}</td>
+            <td>{{ $note->Valeur }}</td>
             
             <td>{{$note->Valeur}}</td>
             <td></td>
